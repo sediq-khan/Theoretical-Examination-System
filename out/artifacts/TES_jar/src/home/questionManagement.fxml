@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.questionManagementController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+               <image>
+
+               </image>
+            </ImageView>
+            <Label text="ښاروالی کابل" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#invokeOverviewMngtUI" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Admin Management" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnExamMngt" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#invokeExamMngtUI" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Exam Management">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnAccountMngt" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#invokeAccountMngtUI" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Account Management">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnNetworkMngt" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#invokeNetworkMngtUI" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Network Management">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnQuestionMngt" alignment="BASELINE_LEFT" disable="true" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Question Management">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="--------------">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Sign Out">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+         <children>
+            <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TabPane prefHeight="576.0" prefWidth="788.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab fx:id="questionList" text="Question List">
+                           <content>
+                              <VBox fx:id="questionListVBox" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="791.0">
+                                 <children>
+                                    <ScrollPane fx:id="scrollPane" prefHeight="547.0" prefWidth="788.0">
+                                       <content>
+                                          <Pagination fx:id="pagination" prefHeight="544.0" prefWidth="773.0" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="addQuestion" text="Add Question">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="8.0" layoutY="6.0" prefHeight="361.0" prefWidth="419.0" styleClass="vbox">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="52.0" text="Question" />
+                                                <TextField fx:id="Question" prefHeight="30.0" prefWidth="279.0" promptText="Question" HBox.hgrow="ALWAYS">
+                                                   <styleClass>
+                                                      <String fx:value="txt-fields" />
+                                                      <String fx:value="txt-color" />
+                                                   </styleClass>
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="52.0" text="A" />
+                                                <TextField fx:id="Answer1" prefHeight="30.0" prefWidth="357.0" promptText="Choice A">
+                                                   <styleClass>
+                                                      <String fx:value="txt-fields" />
+                                                      <String fx:value="txt-color" />
+                                                   </styleClass>
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="45.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="52.0" text="B" />
+                                                <TextField fx:id="Answer2" prefHeight="30.0" prefWidth="357.0" promptText="Choice B">
+                                                   <styleClass>
+                                                      <String fx:value="txt-fields" />
+                                                      <String fx:value="txt-color" />
+                                                   </styleClass>
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="52.0" text="C" />
+                                                <TextField fx:id="Answer3" prefHeight="30.0" prefWidth="357.0" promptText="Choice C">
+                                                   <styleClass>
+                                                      <String fx:value="txt-fields" />
+                                                      <String fx:value="txt-color" />
+                                                   </styleClass>
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="52.0" text="D" />
+                                                <TextField fx:id="Answer4" prefHeight="30.0" prefWidth="357.0" promptText="Choice D">
+                                                   <styleClass>
+                                                      <String fx:value="txt-fields" />
+                                                      <String fx:value="txt-color" />
+                                                   </styleClass>
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="419.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="52.0" text="Category" />
+                                                <JFXComboBox fx:id="categoriesComboBox" prefHeight="25.0" prefWidth="177.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="185.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="419.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="52.0" text="Correct Answer" />
+                                                <JFXComboBox fx:id="correntAnswerComboBox" prefHeight="25.0" prefWidth="177.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <children>
+                                                <JFXButton fx:id="btnSelectImage" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#selectImage" prefHeight="35.0" prefWidth="135.0" styleClass="txt-color" text="Select Image">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <JFXButton fx:id="btnSelectVideo" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#selectMedia" prefHeight="35.0" prefWidth="135.0" styleClass="txt-color" text="Select Video">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </JFXButton>
+                                                <JFXButton fx:id="btnAddQuestion" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#addQuestion" prefHeight="35.0" prefWidth="135.0" styleClass="txt-color" text="Add Question">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="307.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="465.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label fx:id="addQuestionErrorLabel" layoutX="14.0" layoutY="373.0" prefHeight="23.0" prefWidth="408.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+   <effect>
+      <DropShadow color="#1b1eeb" />
+   </effect>
+</AnchorPane>

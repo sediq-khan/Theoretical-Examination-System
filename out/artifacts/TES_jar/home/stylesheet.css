@@ -1,0 +1,20 @@
+.parent {
+    -fx-background-color: #ffb548;
+}
+
+.txt-fields {
+    -fx-background-color: transparent;
+}
+
+.vbox{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 3px;
+}
+
+.txt-color{
+    -fx-text-fill: #999999;
+}
+
+.combo-box {
+    -fx-pref-width: 300;
+}

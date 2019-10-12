@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@logIn/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="superAdmin.examManagementController">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="171.0" styleClass="parent" stylesheets="@logIn/stylesheet.css">
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         <children>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="160.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#999999" glyphName="QUESTION" size="1.3em" text="">
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="adminMngtButtonQuestionUI" alignment="BASELINE_RIGHT" buttonType="RAISED" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="147.0" styleClass="txt-color" text="Admin Management" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="160.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#999999" glyphName="QUESTION" size="1.3em" text="">
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="examMngtButtonQuestionUI" alignment="BASELINE_RIGHT" buttonType="RAISED" disable="true" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="147.0" styleClass="txt-color" text="Exam Management" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="160.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#999999" glyphName="QUESTION" size="1.3em" text="">
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="accountMngtButtonQuestionUI" alignment="BASELINE_RIGHT" buttonType="RAISED" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="147.0" styleClass="txt-color" text="Account Management" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="160.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#999999" glyphName="QUESTION" size="1.3em" text="">
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="networkdquestionMngtButtonQuestionUI" alignment="BASELINE_RIGHT" buttonType="RAISED" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="147.0" styleClass="txt-color" text="Network Management" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="160.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <FontAwesomeIconView fill="#999999" glyphName="QUESTION" size="1.3em" text="">
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="questionMngtButtonQuestionUI" alignment="BASELINE_RIGHT" buttonType="RAISED" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="147.0" styleClass="txt-color" text="Question Management" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+        </VBox>
+      <ScrollPane layoutX="173.0" layoutY="-2.0" prefHeight="400.0" prefWidth="426.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="393.0" prefWidth="422.0">
+               <children>
+                  <TableView prefHeight="400.0" prefWidth="426.0">
+                    <columns>
+                      <TableColumn prefWidth="51.0" text="ID" />
+                      <TableColumn prefWidth="150.0" text="Name" />
+                        <TableColumn prefWidth="48.0" text="Results" />
+                        <TableColumn prefWidth="34.0" text="Try" />
+                        <TableColumn prefWidth="63.0" text="Disabled?" />
+                        <TableColumn prefWidth="104.0" text="Enable" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="parent" stylesheets="@/home/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logIn.configureDBController">
+   <children>
+      <FontAwesomeIconView fill="#f5f3f3" glyphName="CLOSE" layoutX="579.0" layoutY="20.0" onMouseClicked="#close_app" selectionFill="#fcfcfc" size="1.5em" />
+      <VBox layoutX="100.0" layoutY="78.0" prefHeight="238.0" prefWidth="400.0" styleClass="vbox">
+         <children>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="79.0" text="IP/URL" />
+                  <TextField fx:id="ipURL" prefHeight="30.0" prefWidth="339.0" promptText="IP/URL" HBox.hgrow="ALWAYS">
+                     <styleClass>
+                        <String fx:value="txt-fields" />
+                        <String fx:value="txt-color" />
+                     </styleClass>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="79.0" text="Port" />
+                  <TextField fx:id="databasePort" prefHeight="30.0" prefWidth="339.0" promptText="Database Port" HBox.hgrow="ALWAYS">
+                     <styleClass>
+                        <String fx:value="txt-fields" />
+                        <String fx:value="txt-color" />
+                     </styleClass>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="64.0" text="Username" />
+                  <TextField fx:id="databaseUsername" prefHeight="30.0" prefWidth="279.0" promptText="Database Username" HBox.hgrow="ALWAYS">
+                     <styleClass>
+                        <String fx:value="txt-fields" />
+                        <String fx:value="txt-color" />
+                     </styleClass>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="80.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="79.0" text="Password" />
+                  <PasswordField fx:id="databasePassword" prefHeight="25.0" prefWidth="340.0" promptText="Database Password" stylesheets="@../home/stylesheet.css">
+                     <styleClass>
+                        <String fx:value="txt-color" />
+                        <String fx:value="txt-fields" />
+                     </styleClass></PasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <JFXButton fx:id="btnTestConnection" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#testConnection" prefHeight="35.0" prefWidth="392.0" styleClass="txt-color" text="Test Connection" underline="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="115.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <JFXButton fx:id="btnSetConnectionConfiguration" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#setDBConfiguration" prefHeight="35.0" prefWidth="392.0" styleClass="txt-color" text="Set Connection Configuration" underline="true">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="150.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label fx:id="accountMngtErrorLabel" prefHeight="17.0" prefWidth="786.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

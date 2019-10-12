@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="QuestionNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="774.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Label fx:id="lblQuestion" prefHeight="86.0" prefWidth="774.0" text="AAAAAAAAAAAAAAA" textFill="#b7c3d7" />
+      <Label fx:id="lblAnswerOne" layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="774.0" text="AAAAAAAAAAAAAAA" textFill="#b7c3d7" />
+      <Label fx:id="lblAnswerTwo" layoutX="10.0" layoutY="27.0" prefHeight="57.0" prefWidth="774.0" text="AAAAAAAAAAAAAAA" textFill="#b7c3d7" />
+      <Label fx:id="lblAnswerOneThree" layoutX="10.0" layoutY="576.0" prefHeight="57.0" prefWidth="774.0" text="AAAAAAAAAAAAAAA" textFill="#b7c3d7" />
+      <Label fx:id="lblAnswerOneFour" layoutX="10.0" layoutY="61.0" prefHeight="57.0" prefWidth="774.0" text="AAAAAAAAAAAAAAA" textFill="#b7c3d7" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lblCorrectAnswer" prefHeight="57.0" prefWidth="774.0" text="AAAAAAAAAAAAAAA" textFill="#b7c3d7" />
+            <Label fx:id="lblCategory" prefHeight="57.0" prefWidth="774.0" text="AAAAAAAAAAAAAAA" textFill="#b7c3d7" />
+            <ImageView fx:id="imgImage" fitHeight="120.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_GPS_Antenna_64px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</VBox>

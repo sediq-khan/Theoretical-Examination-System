@@ -1,0 +1,5 @@
+#Thu Sep 19 16:11:54 CEST 2019
+dbPort=3306
+password=
+ip=127.0.0.1
+username=root

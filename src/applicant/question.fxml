@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="superAdmin.superAdminMainUIController">
+   <children>
+      <Label layoutX="14.0" layoutY="2.0" prefHeight="17.0" prefWidth="56.0" text="Question" />
+      <JFXTextArea layoutX="14.0" layoutY="18.0" prefHeight="54.0" prefWidth="582.0" styleClass="parent" stylesheets="@../home/stylesheet.css" />
+      <JFXRadioButton layoutX="14.0" layoutY="80.0" prefHeight="17.0" prefWidth="582.0" />
+      <JFXRadioButton layoutX="14.0" layoutY="107.0" prefHeight="17.0" prefWidth="582.0" />
+      <JFXRadioButton layoutX="14.0" layoutY="132.0" prefHeight="17.0" prefWidth="582.0" />
+      <JFXRadioButton layoutX="14.0" layoutY="158.0" prefHeight="17.0" prefWidth="582.0" />
+      <MediaView fx:id="questionMedia" fitHeight="150.0" fitWidth="150.0" layoutX="446.0" layoutY="184.0" />
+      <ImageView fx:id="questionImage" fitHeight="150.0" fitWidth="150.0" layoutX="278.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" />
+      <CheckBox layoutX="14.0" layoutY="232.0" mnemonicParsing="false" text="Answer Later" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="parent" stylesheets="@/home/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logIn.logInUIController">
+   <children>
+      <FontAwesomeIconView fill="#f5f3f3" glyphName="CLOSE" layoutX="579.0" layoutY="20.0" onMouseClicked="#close_app" selectionFill="#fcfcfc" size="1.5em" />
+      <VBox fx:id="signInControlsVBox" layoutX="150.0" layoutY="148.0" prefHeight="66.0" prefWidth="300.0" styleClass="vbox">
+         <children>
+            <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#999999" glyphName="USER" size="1.3em" />
+                  <TextField fx:id="username" prefHeight="30.0" prefWidth="279.0" promptText="Username" HBox.hgrow="ALWAYS">
+                     <styleClass>
+                        <String fx:value="txt-fields" />
+                        <String fx:value="txt-color" />
+                     </styleClass>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+                 <padding>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                 </padding>
+                 <children>
+                     <FontAwesomeIconView fill="#999999" glyphName="LOCK" size="1.3em" />
+                     <PasswordField fx:id="password" prefHeight="30.0" prefWidth="279.0" promptText="Password" HBox.hgrow="ALWAYS">
+                         <styleClass>
+                             <String fx:value="txt-fields" />
+                             <String fx:value="txt-color" />
+                         </styleClass>
+                         <font>
+                             <Font size="14.0" />
+                         </font>
+                     </PasswordField>
+                 </children>
+             </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="110.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="300.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#999999" glyphName="USERS" size="1.3em" />
+                  <ComboBox fx:id="selectionCombo" prefHeight="35.0" prefWidth="263.0" promptText="User Type" stylesheets="@/home/stylesheet.css">
+                     <styleClass>
+                        <String fx:value="txt-color" />
+                        <String fx:value="txt-fields" />
+                        <String fx:value="combo-box" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="signInVBox" layoutX="150.0" layoutY="262.0" prefHeight="35.0" prefWidth="300.0" styleClass="vbox">
+         <children>
+            <JFXButton fx:id="signIn" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#signIn" prefHeight="35.0" prefWidth="298.0" styleClass="txt-color" text="Sign In" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <VBox fx:id="vboxLogin" layoutX="150.0" layoutY="297.0" prefHeight="68.0" prefWidth="300.0" styleClass="vbox" visible="false">
+         <children>
+            <JFXButton fx:id="btnConfigureDB" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#configureDBParameters" prefHeight="35.0" prefWidth="300.0" styleClass="txt-color" text="Configure Database" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="loginError" prefHeight="32.0" prefWidth="300.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

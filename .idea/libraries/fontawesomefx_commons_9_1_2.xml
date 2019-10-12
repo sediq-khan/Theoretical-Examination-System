@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="fontawesomefx-commons-9.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/fontawesomefx-commons-9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/fontawesomefx-fontawesome-4.7.0-9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/openjfx-12.0.2_windows-x64_bin-sdk.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/build/java" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/demo/java" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/generated/java" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/legacy/java" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/main/core-api/java" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/main/core-impl/java" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/main/protocol-impl/java" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/main/user-api/java" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/main/user-impl/java" />
+      <root url="jar://$PROJECT_DIR$/../JavaFX Files/mysql-connector-java-8.0.17.zip!/mysql-connector-java-8.0.17/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
